@@ -1,5 +1,4 @@
 class Solution:
-
     def numWays(self, words: List[str], target: str) -> int:
         alphabet = 26
         mod = 1000000007
