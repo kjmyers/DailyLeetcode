@@ -1,5 +1,6 @@
 class Solution:
     def validateBinaryTreeNodes(self, n: int, leftChild: List[int], rightChild: List[int]) -> bool:
+        
         def find_root():
             children = set(leftChild) | set(rightChild)
             
@@ -8,6 +9,7 @@ class Solution:
                     return i
                 
             return -1
+        
         
         root = find_root()
         if root == -1:
