@@ -1,6 +1,8 @@
 class Solution:
     def minimumTime(self, n: int, relations: List[List[int]], time: List[int]) -> int:
+        
         @cache
+        
         def dfs(node):
             if not graph[node]:
                 return time[node]
