@@ -1,10 +1,6 @@
 class Solution:
     def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
-        # dCount = {
-        #     "M": 0,
-        #     "P": 0,
-        #     "G": 0
-        # }
+
         ret = 0
         dLast = {
             "M": 0,
