@@ -1,6 +1,7 @@
 class Solution:
     def countPaths(self, n: int, roads: list[list[int]]) -> int:
         MOD = 1_000_000_007
+        
 
         # Build adjacency list
         graph = [[] for _ in range(n)]
