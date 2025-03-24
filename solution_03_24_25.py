@@ -2,7 +2,6 @@ class Solution:
     def countDays(self, days: int, meetings: list[list[int]]) -> int:
         free_days = 0
         latest_end = 0
-
         # Sort meetings based on starting times
         meetings.sort()
 
