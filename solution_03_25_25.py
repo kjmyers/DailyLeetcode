@@ -3,7 +3,6 @@ class Solution:
         # Check if valid cuts can be made in a specific dimension
         def _check_cuts(rectangles: list[list[int]], dim: int) -> bool:
             gap_count = 0
-
             # Sort rectangles by their starting coordinate in the given dimension
             rectangles.sort(key=lambda rect: rect[dim])
 
