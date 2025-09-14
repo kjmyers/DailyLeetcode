@@ -1,5 +1,5 @@
-class Solution(object):
-    def spellchecker(self, wordlist, queries):
+class Solution:
+    def spellchecker(self, wordlist: List[str], queries: List[str]) -> List[str]:
         def devowel(word):
             return "".join('*' if c in 'aeiou' else c
                            for c in word)
@@ -25,5 +25,5 @@ class Solution(object):
             if queryLV in words_vow:
                 return words_vow[queryLV]
             return ""
-
-        return map(solve, queries)
+        
+        return list(map(solve, queries))
