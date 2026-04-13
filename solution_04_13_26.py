@@ -1,0 +1,9 @@
+class Solution:
+    def getMinDistance(self, nums: List[int], target: int, start: int) -> int:
+        n = len(nums)
+        ret = n
+        for i, num in enumerate(nums):
+            if num == target:
+                ret = min(ret, abs(i-start))
+        
+        return ret
