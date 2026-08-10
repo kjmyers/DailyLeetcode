@@ -1,4 +1,6 @@
-dp = [False]*(n+1)
+class Solution:
+    def winnerSquareGame(self, n: int) -> bool:
+        dp = [False]*(n+1)
         for i in range(n+1):
             if dp[i]:
                 continue
